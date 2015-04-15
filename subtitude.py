@@ -60,7 +60,8 @@ class ReplaceHandle(object):
 
             if data:
                 if self.before in data:
-                    NewData = data.replace(self.before,self.afer)
+                    import re
+                    NewData = re.sub(self.before,self.afer,data)
                 else:
                     NewData = data
 
@@ -109,10 +110,5 @@ class MainHandle(CallbackBase):
 if __name__ == "__main__":
     a = MainHandle()
     import sys
-
-    if MainHandle.Replace == sys.argv[1]:
-        a.run(MainHandle.Replace, sys.argv[2], sys.argv[3], sys.argv[4])
-
-    elif MainHandle.Insert == sys.argv[1]:
-        a.run(MainHandle.Insert, sys.argv[2], sys.argv[3], sys.argv[4])
+    a.run(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
 
