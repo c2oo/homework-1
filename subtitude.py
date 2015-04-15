@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #-*-coding:utf8-*-
 
-""" 2015-04-16 anning """
+""" 2015-04-15 anning """
 
 
 def PackageManage(package,handle):
