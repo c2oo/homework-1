@@ -116,21 +116,3 @@ if __name__ == "__main__":
     elif MainHandle.Insert == sys.argv[1]:
         a.run(MainHandle.Insert, sys.argv[2], sys.argv[3], sys.argv[4])
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
